@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page of Goo Business The best B2B Lead Generation Company</title>
+    <link rel="shortcut icon" href="/static/img/Goo%20Businesses.png" type="image/png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=fire">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utils.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+    <div class="pogress" id="pogressID"></div>
+
+    <header>
+
+        <nav>
+            <div class="logo">
+                <img src="/static/img/Goo%20Businesses.png" height="73px">
+            </div>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/contact">Contact</a></li>
+                <li><a href="/whyus">Why us?</a></li>
+            </ul>
+            <form class="form" action="/searching" method="post">
+                
+                <div class="search">
+                    <input class="form-ele1" type="text" id="searchbarID" name="seachbar" placeholder="Search here..."
+                        width="20vw">
+                </div>
+                <div class="btn">
+                    <button class="bttn" type="submit">Search</button>
+                </div>
+            </form>
+
+            <a href="/searching">
+                <div class="navallproduct">All Services</div>
+            </a>
+
+        </nav>
+
+        <a href="/freetrail" class="freeTrl bblink">Get Your<br>Free Trial<br>up to $30</a>
+    </header>
+
+    <main>
+
+        <div class="container">
+
+
+            <div class="slider">
+                <div class="sliderImg1"></div>
+                <div class="sliderImg2"></div>
+                <div class="sliderImg3"></div>
+            </div>
+
+            <div id="clock" onload="currentTime()" style="font-family: sans-serif;"></div>
+
+
+            <!-- -------------------Code here------------------ -->
+                <!-- Create card container -->
+                <div class="card">
+                    <h2 id="heading"> Web Development Services </h2>
+                     
+                    <section class="card-items">
+                        <div class="card-item">
+                            <a href=" "><img class="pimg"
+                                src="logos\static web.jpg" width="260px"
+                                height="160px" alt="static web">
+                            </a>
+                            <div id="info">
+                                <p>Statice Website</p>
+                                <p>Price: $50 - $200</p>
+                                <P>Discount: 20% Off</P>
+                            </div>
+                            <!-- Button to open the order form -->
+                            <button class="button" onclick="openOrderForm(0)"><span>Order Now</span></button>    
+                            
+                        </div>
+                        <!-- Repeating the above structure for each card item, updating the content and index -->
+                        <div class="card-item">
+                            <a href=" "><img class="pimg"
+                                src="logos\Dynamic Website.png" width="260px"
+                                height="160px" alt="">
+                            </a>
+                            <div id="info">
+                                <p>Dynamic Website </p>
+                                <p>Price: $100 - $300</p>
+                                <P>Discount:17% Off</P>
+                            </div>
+                            <button class="button" onclick="openOrderForm(1)"><span>Order Now</span></button>
+                        </div>
+                        <div class="card-item">
+                            <a href=" "><img class="pimg"
+                                src="logos\React UI.png" width="260px"
+                                height="160px" alt="">
+                            </a>
+                                <div id="info">
+                                    <p>UI Websites with React.js.</p> 
+                                    <p>Price: $75 - $150</p>
+                                    <P>Discount:32% Off</P>
+                                </div>
+                                <button class="button" onclick="openOrderForm(2)"><span>Order Now</span></button>
+                        </div>
+                        <div class="card-item">
+                            <a href=" "><img class="pimg"
+                                src="logos\Ecommerce.jpg" width="260px"
+                                height="160px" alt="">
+                            </a>
+                            <div id="info">
+                                <p>Ecommerce Website</p>
+                                <p>Price: $80 - $370</p>
+                                <P>Discount:6% Off</P>
+                            </div>
+                            <button class="button" onclick="openOrderForm(3)"><span>Order Now</span></button>
+                        </div>
+                        <div class="card-item">
+                            <a href=" "><img class="pimg"
+                                src="logos\Dropshipping.png" width="260px"
+                                height="160px" alt="">
+                            </a>
+                            <div id="info">
+                                <p>Dropshipping Website</p> 
+                                <p>Price: $48 - $400</p>
+                                <P>Discount:20% Off</P>
+                            </div>
+                            <button class="button" onclick="openOrderForm(4)"><span>Order Now</span></button>
+                        </div>
+                        <div class="card-item">
+                            <a href=" "><img class="pimg"
+                                src="logos\Grocery Web.jpg" width="260px"
+                                height="160px" alt="">
+                            </a>
+                            <div id="info">
+                                <p>Grocery Website</p> 
+                                <p>Price: $87 - $540</p>
+                                <P>Discount:40% Off</P>
+                            </div>
+                            <button class="button" onclick="openOrderForm(5)"><span>Order Now</span></button>
+                        </div>
+                        <div class="card-item">
+                            <a href=" "><img class="pimg"
+                                src="logos\foodorderweb.jpg" width="260px"
+                                height="160px" alt="">
+                            </a>
+                            <div id="info">
+                                <p>Food Ordering Website</p>
+                                <p>Price: $60 - $590</p>
+                                <P>Discount: 67% Off</P>
+                            </div>
+                            <button class="button" onclick="openOrderForm(6)"><span>Order Now</span></button> 
+                        </div>
+                        <div class="card-item">
+                            <a href=" "><img class="pimg"
+                                src="logos\custom web.png" width="260px"
+                                height="160px" alt="">
+                            </a>
+                            <div id="info">
+                                <p>Custom Business Website</p>
+                                <p>Price: $120 - $430</p>
+                                <P>Discount: 21% Off</P>
+                            </div>
+                            <button class="button" onclick="openOrderForm(7)"><span>Order Now</span></button> 
+                        </div>    
+                        
+                    </section>
+                </div>
+                <!-- Order Form Modal -->
+                <div id="orderForm" class="modal">
+                    <!-- Add order form content -->
+                    <h3>Order Form</h3>
+                    <form>
+                        <!-- Add form fields -->
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                        <label for="name">DiscountCode:</label>
+                        <input type="text" id="name" name="name" required>
+                        <button type="submit">Place Order!</button>
+                    </form>
+                </div>
+
+                <!-- Overlay for the modal -->
+                <div id="overlay" class="overlay"></div>
+                <!-- JavaScript to open the order form modal -->
+                <script>
+                    // Function to open the order form modal
+                    function openOrderForm(index) {
+                    const orderForm = document.getElementById("orderForm");
+                    const overlay = document.getElementById("overlay");
+
+                    // Display the modal and overlay
+                    orderForm.style.display = "block";
+                    overlay.style.display = "block";
+
+                    // Using the index parameter to get information about the selected service
+                    console.log("Order Now clicked for service at index:", index);
+                    }
+
+                    // Function to close the order form modal
+                    function closeOrderForm() {
+                    const orderForm = document.getElementById("orderForm");
+                    const overlay = document.getElementById("overlay");
+
+                    // Hide the modal and overlay
+                    orderForm.style.display = "none";
+                    overlay.style.display = "none";
+                    }
+
+                    // Close the modal if the overlay is clicked
+                    document.getElementById("overlay").addEventListener("click", closeOrderForm);
+                </script>
+
+            <!-- -------------------Code here------------------ -->
+
+
+            <div class="card">
+                <h2 class="my-1">B2B Lead Generation</h2>
+                <div class="card-items">
+
+
+
+                    <div class="card-item">
+                        <a href="/servicepage/b2b-leaad-generation/3"><img class="pimg"
+                                src="/media/AllServicesDBimgFolder/B2B_Lead_Generation.jpg" width="260px" height="160px"
+                                alt=""></a>
+
+                        <div class="lines">
+                            <a class="nameA" href="/servicepage/b2b-leaad-generation/3">
+                                <p class="line1 text-center my-sm">C-Lavle Contact List Building ..</p>
+                            </a>
+                            <p class="line2 text-center my-sm"><span class="priceperlead">$15</span>&nbsp;per 100
+                                Leads&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="offer">70%Off</span></p>
+                            <a href="/servicepage/b2b-leaad-generation/3">
+                                <p class="line3 text-center my-sm">Grab Now</p>
+                            </a>
+                        </div>
+
+                    </div>
+
+
+                    <div class="card-item">
+                        <a href="/servicepage/b2b-lead-generation/4"><img class="pimg"
+                                src="/media/AllServicesDBimgFolder/1.5lead_generation_5.jpg" width="260px"
+                                height="160px" alt=""></a>
+
+                        <div class="lines">
+                            <a class="nameA" href="/servicepage/b2b-lead-generation/4">
+                                <p class="line1 text-center my-sm">B2B potential targeted custome..</p>
+                            </a>
+                            <p class="line2 text-center my-sm"><span class="priceperlead">$14</span>&nbsp;per 100
+                                Leads&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="offer">71%Off</span></p>
+                            <a href="/servicepage/b2b-lead-generation/4">
+                                <p class="line3 text-center my-sm">Grab Now</p>
+                            </a>
+                        </div>
+
+                    </div>
+
+
+                    <div class="card-item">
+                        <a href="/servicepage/lead-generation-COMPANY-IN-2023/5"><img class="pimg"
+                                src="/media/AllServicesDBimgFolder/1.5get_leads.jpg" width="260px" height="160px"
+                                alt=""></a>
+
+                        <div class="lines">
+                            <a class="nameA" href="/servicepage/lead-generation-COMPANY-IN-2023/5">
+                                <p class="line1 text-center my-sm">Boost your business sales with..</p>
+                            </a>
+                            <p class="line2 text-center my-sm"><span class="priceperlead">$12</span>&nbsp;per 100
+                                Leads&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="offer">60%Off</span></p>
+                            <a href="/servicepage/lead-generation-COMPANY-IN-2023/5">
+                                <p class="line3 text-center my-sm">Grab Now</p>
+                            </a>
+                        </div>
+
+                    </div>
+
+
+                    <div class="card-item">
+                        <a href="/servicepage/Lead-Generation-With-Crunchbase-IN2023/6"><img class="pimg"
+                                src="/media/AllServicesDBimgFolder/1.5Digital.jpg" width="260px" height="160px"
+                                alt=""></a>
+
+                        <div class="lines">
+                            <a class="nameA" href="/servicepage/Lead-Generation-With-Crunchbase-IN2023/6">
+                                <p class="line1 text-center my-sm">B2B lead generation with Crunc..</p>
+                            </a>
+                            <p class="line2 text-center my-sm"><span class="priceperlead">$10</span>&nbsp;per 100
+                                Leads&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="offer">68%Off</span></p>
+                            <a href="/servicepage/Lead-Generation-With-Crunchbase-IN2023/6">
+                                <p class="line3 text-center my-sm">Grab Now</p>
+                            </a>
+                        </div>
+
+                    </div>
+
+
+                    <div class="card-item">
+                        <a href="/servicepage/best-lead-generation-company-in-2023/7"><img class="pimg"
+                                src="/media/AllServicesDBimgFolder/1.5B2B.jpg" width="260px" height="160px" alt=""></a>
+
+                        <div class="lines">
+                            <a class="nameA" href="/servicepage/best-lead-generation-company-in-2023/7">
+                                <p class="line1 text-center my-sm">Any type of B2B lead genetario..</p>
+                            </a>
+                            <p class="line2 text-center my-sm"><span class="priceperlead">$25</span>&nbsp;per 100
+                                Leads&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="offer">75%Off</span></p>
+                            <a href="/servicepage/best-lead-generation-company-in-2023/7">
+                                <p class="line3 text-center my-sm">Grab Now</p>
+                            </a>
+                        </div>
+
+                    </div>
+
+
+                    <div class="card-item">
+                        <a href="/servicepage/bestBoost-your-business-with-prospect-list-buildin/8"><img class="pimg"
+                                src="/media/AllServicesDBimgFolder/1.5Google_Map.jpg" width="260px" height="160px"
+                                alt=""></a>
+
+                        <div class="lines">
+                            <a class="nameA" href="/servicepage/bestBoost-your-business-with-prospect-list-buildin/8">
+                                <p class="line1 text-center my-sm">Boost your business with b2b l..</p>
+                            </a>
+                            <p class="line2 text-center my-sm"><span class="priceperlead">$17</span>&nbsp;per 100
+                                Leads&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="offer">59%Off</span></p>
+                            <a href="/servicepage/bestBoost-your-business-with-prospect-list-buildin/8">
+                                <p class="line3 text-center my-sm">Grab Now</p>
+                            </a>
+                        </div>
+
+                    </div>
+
+
+                    <div class="card-item">
+                        <a href="/servicepage/best-lead-generation-company-in-2023/9"><img class="pimg"
+                                src="/media/AllServicesDBimgFolder/1.5Chidi_Eze_2.jpg" width="260px" height="160px"
+                                alt=""></a>
+
+                        <div class="lines">
+                            <a class="nameA" href="/servicepage/best-lead-generation-company-in-2023/9">
+                                <p class="line1 text-center my-sm">B2b lead generation from Googl..</p>
+                            </a>
+                            <p class="line2 text-center my-sm"><span class="priceperlead">$12</span>&nbsp;per 100
+                                Leads&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="offer">58%Off</span></p>
+                            <a href="/servicepage/best-lead-generation-company-in-2023/9">
+                                <p class="line3 text-center my-sm">Grab Now</p>
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+
+</body>
+</html>
